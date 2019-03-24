@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{post.title}}</title>
+		<link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/superhero/bootstrap.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Fira Sans' rel='stylesheet'>
+		
+		<style>
+		select {
+		width: 296px;
+		
+		}
+		.c h2
+		{
+			font-family:Helvatica;
+			font-size: 68px;
+			text-align: center;
+			padding-top: 30px;
+			padding-left: 35px;
+			}
+		.card {
+		margin: 0 auto; /* Added */
+		float: none; /* Added */
+		margin-bottom: 10px; /* Added */
+		}
+		</style>
+</head>
+<body>
+			<div class="container">
+				<h1>{{post.title}}</h1>
+				<h4>Author of the book is :{{post.Author}}</h4>
+				<h5>The Description of the book is:<br>{{post.description}}</h5><br><br>
+				<h5>The condition of the book is:<br>{{post.condn}}</h5><br><br>
+				<b><p>Posted {{post.timestamp|timesince}} ago</p></b>
+				<h5>If you are interested than mail to :<br>{{post.email}}</h5>
+				<p><b>{{post.body|linebreaksbr}}</p></b>
+			            <a class="nav-link" href="/"><button type="button" style="background:#0fb9b1" class="btn btn-info">Back Home </button></a>
+			    </p>
+			</div>
+</body>
+</html>
